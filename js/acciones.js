@@ -1,7 +1,7 @@
 // JavaScript Document
 
 $(document).ready(function(e) {
-document.addEventListener("deviceready", onDeviceReady,flase);
+document.addEventListener("deviceready", onDeviceReady,false);
 
 });
 
@@ -62,7 +62,7 @@ function watchPosition(){
 		$('#aaccuracy').html(position.coords.altitudeAccuracy);
 		$('#headingg').html(position.coords.heading);
 		$('#speed').html(position.coords.speed);
-		$('#timestamp').html(position.coords.timestamp);
+		$('#timestamp').html(position.timestamp);
 	};
 	
 	function onError(error){
